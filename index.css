@@ -1,0 +1,337 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #D7D7D7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+* {box-sizing: border-box;}
+
+.card {
+    max-width: 880px;
+    width: 100%;
+    height: 168px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row
+}
+
+.box-big {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px 102px 18px 43px;
+}
+
+.info {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 13px;
+}
+
+.ornament {
+    margin-right: 12px;
+}
+
+.astana {
+    display: block;
+    width: 100px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #202123;
+}
+
+.departure {
+    display: flex;
+    flex-direction: column;
+    margin-right: 28px; 
+}
+
+.date {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #202123;
+}
+
+.time {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #202123;
+}
+
+
+.duration {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+}
+
+.city {
+    display: flex;
+    flex-direction: row;
+}
+
+.style {
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.point {
+    font-size: 10px;
+    line-height: 12px;
+    color: #B9B9B9;
+}
+
+.clock {
+    font-size: 12px;
+    line-height: 18px;
+    color: #202123;
+    margin-right: 46px;
+    margin-left: 44px;
+}
+
+.line {
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+
+.through {
+    font-size: 12px;
+    line-height: 16px;
+    color: #FF9900;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.details {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #7284E4;
+}
+
+.flight-details {
+    border-bottom: 1px dashed #7284E4;
+    margin-right: 23px;
+}
+
+.flight-details:hover {
+    cursor: pointer;
+}
+
+.tariff-terms {
+    border-bottom: 1px dashed #7284E4;
+    margin-right: 46px;
+}
+
+.flight-terms:hover {
+    cursor: pointer;
+}
+
+.return {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 7px;
+}
+
+.irrevocable {
+    font-size: 12px;
+    line-height: 14px;
+    color: #707276;
+}
+
+.small {
+    background: #F5F5F5;
+    border-radius: 0px 4px 4px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px 15px 20px;
+}
+
+.price {
+    font-size: 24px;
+    line-height: 28px;
+    color: #202123;
+}
+
+.choice {
+    background: #55BB06;
+    border: 1px solid #55BB06;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+}
+
+.choice:hover {
+    cursor: pointer;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 7px 12px 8px 12px;
+}
+
+
+.all-price {
+    font-size: 12px;
+    line-height: 16px;
+    color: #707276;
+}
+
+.baggage {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.no {
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+    color: #202123;
+    margin-right: 6px;
+}
+
+.plus {
+    background: #EAF0FA;
+    border: 1px solid #EAF0FA;
+    border-radius: 2px;
+    width: 128px;
+    height: 24px;
+    
+}
+
+.plus:hover {
+    cursor: pointer;
+}
+.add{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #5763B3;
+}
+
+.burger {
+    display: none;
+}
+
+.departures {
+    display: none
+}
+
+/* Mobile version */
+/* 
+    ДО МАКС ШИРИНЫ 768PX применяем эти стили
+*/
+@media (max-width: 768px) {
+
+    .burger {
+        display: block;
+    }
+
+    body {
+        padding: 16px;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .card, .info {
+        flex-direction: column;
+    }
+
+    .card {
+        background: green
+    }
+
+    .info {
+        gap: 24px
+    }
+
+    .city {
+        justify-content: space-between;
+    }
+
+    .box-big {
+        padding: 16px;
+    }
+
+    .small {
+        padding: 16px 44px;
+    }
+
+    .baggage, .nav {
+        display: none
+    }
+
+    .duration {
+        order: 1;
+        margin-right: 0;
+    }
+
+    .info > * {
+        margin-right: 0;
+    }
+
+    .card {
+        height: fit-content;
+    }
+
+    .departures {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .departures > * {
+        margin-right: 0;
+    }
+
+    .none {
+        display: none
+    }
+}
+
+@media (max-width: 288px) {
+    .card {
+        background: red
+    }
+}
